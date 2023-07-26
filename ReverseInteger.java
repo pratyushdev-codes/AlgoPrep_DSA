@@ -6,7 +6,7 @@ public class ReverseInteger {
         int n= sc.nextInt();
         while(n>0){
             int lastnumber =n%10;
-            System.out.println(lastnumber);
+            System.out.print(lastnumber);
             n=n/10;
         }
     }
