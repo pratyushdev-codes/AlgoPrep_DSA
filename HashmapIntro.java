@@ -1,5 +1,5 @@
 import java.util.HashMap;
-
+//Performing basic operations on Hashmaps
 public class HashmapIntro{
     public static void main(String[] args) {
         HashMap<Integer,Integer>map= new HashMap<>();
@@ -8,5 +8,7 @@ public class HashmapIntro{
         map.put(30,90);
         System.out.println(map.get(10));
         System.out.println(map.get(20));
+        System.out.println(map.containsKey(40));
+        map.remove(10);
     }
 }
