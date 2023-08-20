@@ -10,5 +10,9 @@ public class HashmapIntro{
         System.out.println(map.get(20));
         System.out.println(map.containsKey(40));
         map.remove(10);
+        for(int key:map.keySet()){
+            System.out.println(key);
+        }
+
     }
 }
