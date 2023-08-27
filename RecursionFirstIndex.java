@@ -21,7 +21,7 @@
 
 // https://www.hackerrank.com/contests/interview-prep-cohort-1/challenges/found-recursion-first-index-hw
 
-
+import java.util.*;
 
 public class RecursionFirstIndex{
         public static void main(String[] args) {
