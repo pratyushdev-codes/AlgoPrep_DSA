@@ -1,13 +1,4 @@
 
-//prime number optimised
-//factors optimised
-//Sqrt without math.sqrt 
-// multiply-sum
-
-
-
-
-// You need to find the square root of a given number N. If N is not a pe perfect square, then floor(√x) must be returned.
 import java.util.Scanner;
 
 public class Main {
@@ -20,13 +11,35 @@ public class Main {
     for(int i = 0;i<n; i++){
         arr [i]=sc.nextInt();
     }
-    System.out.println(arr[5]);
+     int sp= sc.nextInt();
+    int ep=sc.nextInt();
+
+    reversePart(arr, sp, ep);
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+  
+}public static void reversePart(int []arr, int sp, int ep){
+   int n=arr.length;
+    while(sp>ep){
+        int temp=arr[sp];
+        arr[sp]=arr[ep];
+        arr[ep]=temp;
+        sp++;
+        ep--;
+
+    
+
+    }
+
+  for(int i = 0;i<n; i++){
+       System.out.print(arr[i]+ " ");
+    }
 }
         
     }
 
-    // Syntax: int[] arr = new int[x]; // x=size of array
-    
 
 
 
