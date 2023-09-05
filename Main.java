@@ -1,45 +1,23 @@
-
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    int[] arr = new int[n];
-
-    
-    for(int i = 0;i<n; i++){
-        arr [i]=sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        printPattern(n);
     }
-     int sp= sc.nextInt();
-    int ep=sc.nextInt();
 
-    reversePart(arr, sp, ep);
+    public static void printPattern(int n) {
+        int a = 0, b = 1;
 
         for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
+            for (int j = 0; j <= i; j++) {
+                System.out.print(a + " ");
+                int next = a + b;
+                a = b;
+                b = next;
+            }
+            System.out.println();
         }
-  
-}public static void reversePart(int []arr, int sp, int ep){
-   int n=arr.length;
-    while(sp>ep){
-        int temp=arr[sp];
-        arr[sp]=arr[ep];
-        arr[ep]=temp;
-        sp++;
-        ep--;
-
-    
-
-    }
-
-  for(int i = 0;i<n; i++){
-       System.out.print(arr[i]+ " ");
     }
 }
-        
-    }
-
-
-
-
